@@ -464,9 +464,7 @@ footer {
   }
 
   .close-ham-menu, .open-ham-menu {
-    /* display: block; */
-    transform: translateX(0);
-    /* padding: 20px; */
+    display: block;
   }
 
   .close-ham-menu {
@@ -477,12 +475,12 @@ footer {
     margin: 0 auto;
   }
 
-  #ham-active:checked ~ .nav-right,#overlay {
-    display: flex;
-    
+  #ham-active:checked ~ .nav-right {
+    transform: translateX(0);
   }
 
   #ham-active:checked ~ #overlay {
+    display: flex;
     height: 100vh;
     width: 100%;
     position: fixed;
