@@ -19,8 +19,10 @@ body {
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
