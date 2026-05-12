@@ -453,7 +453,6 @@ footer {
     height: 100dvh;
 
     background-color: rgb(0, 0, 0);
-    box-shadow: -5px 0 10px rgba(255, 255, 255, 0.123);
 
     transform: translateX(100%);
     transition: transform .5s ease-out;
@@ -477,15 +476,21 @@ footer {
 
   #ham-active:checked ~ .nav-right {
     transform: translateX(0);
+    box-shadow: 0 0 0;
   }
 
   #ham-active:checked ~ #overlay {
     display: flex;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
